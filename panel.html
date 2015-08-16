@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>開閉式のパネル</title>
+    <script type="text/javascript" src="./js/jquery-2.0.3.js"></script>
+    <script type="text/javascript" src="./js/jquery-ui-1.10.3.custom.min.js"></script>
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/jquery-ui-1.10.3.custom.min.css" />
+    <script>
+        $(function () {
+            $('.panel').accordion({
+                active: false,
+                collapsible: true
+
+            })
+        });
+    </script>
+</head>
+<body>
+    <h1>開閉式のパネル</h1>
+    <div class="panel">
+        <h3>パネル１</h3>
+        <div>開閉式のパネルです</div>
+    </div>
+    <div class="panel">
+        <h3>パネル２</h3>
+        <div>複数のパネルを開くこともできます。</div>
+    </div>
+    <div class="panel">
+        <h3>パネル３</h3>
+        <div>すべてのパネルを閉じることもできます。</div>
+    </div>
+    <hr/>
+    <footer>
+        copyright yamatake0928
+    </footer>
+</body>
+</html>

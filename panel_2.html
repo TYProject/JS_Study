@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>開閉式のパネル</title>
+    <script type="text/javascript" src="./js/jquery-2.0.3.js"></script>
+    <script type="text/javascript" src="./js/jquery-ui-1.10.3.custom.min.js"></script>
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/jquery-ui-1.10.3.custom.min.css" />
+    <script>
+        $(function () {
+            $('.auto').accordion({
+                active: false,
+                collapsible: true,
+                heightStyle: 'auto'
+            });
+            $('.content').accordion({
+                active: false,
+                collapsible: true,
+                heightStyle: 'content'
+            });
+            $('.fill').accordion({
+                active: false,
+                collapsible: true,
+                heightStyle: 'fill'
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>開閉式のパネルの高さを調整する</h1>
+    <h2>heightStyle: 'auto'</h2>
+    <div class="auto">
+        <h3>auto</h3>
+        <div>
+           パネルの高さは最も高いコンテンツに合わせます。<br/>
+            パネルの高さは最も高いコンテンツに合わせます。<br />
+            パネルの高さは最も高いコンテンツに合わせます.<br />
+            パネルの高さは最も高いコンテンツに合わせます。<br />
+            パネルの高さは最も高いコンテンツに合わせます。<br />
+            パネルの高さは最も高いコンテンツに合わせます。<br />
+        </div>
+    </div>
+    <div class="auto">
+        <h3>content</h3>
+        <div>
+            コンテンツの量に合わせてサイズを変更します。
+        </div>
+    </div>
+    <div class="auto">
+        <h3>fill</h3>
+        <div>
+            パネルの高さは親要素によって決まります<br />
+            パネルの高さは親要素によって決まります<br />
+            パネルの高さは親要素によって決まります<br />
+        </div>
+    </div>
+    <h2>heightStyle:'content'</h2>
+    <div class="content">
+        <h3>auto</h3>
+        <div>
+            パネルの高さは最も高いコンテンツに合わせます。<br />
+            パネルの高さは最も高いコンテンツに合わせます。<br />
+            パネルの高さは最も高いコンテンツに合わせます.<br />
+            パネルの高さは最も高いコンテンツに合わせます。<br />
+            パネルの高さは最も高いコンテンツに合わせます。<br />
+            パネルの高さは最も高いコンテンツに合わせます。<br />
+        </div>
+    </div>
+    <div class="content">
+        <h3>content</h3>
+        <div>
+            コンテンツの量に合わせてサイズを変更します。
+        </div>
+    </div>
+    <div class="content">
+        <h3>fill</h3>
+        <div>
+            パネルの高さは親要素によって決まります<br />
+            パネルの高さは親要素によって決まります<br />
+            パネルの高さは親要素によって決まります<br />
+        </div>
+    </div>
+    <h2>heightStyle:'fill'</h2>
+    <div class="fill">
+        <h3>auto</h3>
+        <div>
+            パネルの高さは最も高いコンテンツに合わせます。<br />
+            パネルの高さは最も高いコンテンツに合わせます。<br />
+            パネルの高さは最も高いコンテンツに合わせます.<br />
+            パネルの高さは最も高いコンテンツに合わせます。<br />
+            パネルの高さは最も高いコンテンツに合わせます。<br />
+            パネルの高さは最も高いコンテンツに合わせます。<br />
+        </div>
+    </div>
+    <div class="fill">
+        <h3>content</h3>
+        <div>
+            コンテンツの量に合わせてサイズを変更します。
+        </div>
+    </div>
+    <div class="fill">
+        <h3>fill</h3>
+        <div>
+            パネルの高さは親要素によって決まります<br />
+            パネルの高さは親要素によって決まります<br />
+            パネルの高さは親要素によって決まります<br />
+        </div>
+    </div>
+    <hr />
+    <footer>
+        copyright yamatake0928
+    </footer>
+</body>
+</html>
