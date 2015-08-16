@@ -2,7 +2,7 @@
     background-color:palegoldenrod;
 }
 
-#panel {
+.panel {
     width: 600px;
 }
 
@@ -19,15 +19,18 @@
 h1 {
     border-left: 10px solid blue;
     border-bottom: 1px solid blue;
+    padding-left:10px;
     width: 50%;
 }
 h2 {
     border-left: 10px solid red;
     border-bottom: 1px solid red;
+    padding-left:10px;
     width: 50%;
 }
 h3 {
-    border-left: 15px solid blue;
+    border-left: 10px solid blue;
+    padding-left:10px;
     width: 50%;
 }
 
